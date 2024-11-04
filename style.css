@@ -1,0 +1,118 @@
+/* 设置页面背景图片和文字样式 */
+body {
+    background-image: url('66.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white; /* 全局文字颜色 */
+    font-family: 'Arial', sans-serif; /* 默认字体 */
+    line-height: 1.6; /* 增加行距 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 容器样式，居中显示，增加背景透明度 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明背景提升文字可读性 */
+    border-radius: 8px;
+}
+
+/* 标题样式 */
+h1, h2 {
+    font-family: 'Georgia', serif; /* 高级字体 */
+    color: #f2f2f2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+}
+
+/* 导航栏样式 */
+.navbar {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #333333;
+}
+
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* 段落文字样式 */
+.section p {
+    color: #e0e0e0;
+    font-size: 1.1em;
+}
+
+/* 页脚样式 */
+.footer {
+    text-align: center;
+    color: #bbbbbb;
+    padding: 10px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* 表单嵌入样式 */
+iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* 响应式布局，适配较小屏幕 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+    }
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
